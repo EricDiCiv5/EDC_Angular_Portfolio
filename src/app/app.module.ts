@@ -12,6 +12,8 @@ import { WebProjectsComponent } from './components/web-projects/web-projects.com
 import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+import { NpmLibrariesModule } from './modules/npm-libraries/npm-libraries.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NpmLibrariesModule
   ],
   providers: [],
   bootstrap: [FullPageComponent]
