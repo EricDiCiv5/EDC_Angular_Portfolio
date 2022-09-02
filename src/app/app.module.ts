@@ -10,6 +10,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ProgrammingLanguagesComponent } from './components/programming-languages/programming-languages.component';
 import { WebProjectsComponent } from './components/web-projects/web-projects.component';
 import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { YoutubeVideosComponent } from './components/youtube-videos/youtube-vide
     AboutMeComponent,
     ProgrammingLanguagesComponent,
     WebProjectsComponent,
-    YoutubeVideosComponent
+    YoutubeVideosComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
