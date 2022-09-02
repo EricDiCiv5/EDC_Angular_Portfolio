@@ -7,7 +7,7 @@ $breakpoints: (
   tab-port: 1024px,
   tab-land: 1200px,
   tab-desktop: 1600px
-  );
+);
 
 /* Mixin para hacer responsive */
 @mixin allmedias($breakpoint) {

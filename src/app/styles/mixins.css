@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*Creación del mapa de puntos de corte*/
+/* Mixin para hacer responsive */
+/*Para usarla en los componentes, llamarlo como
+@include allmedias(nombre de la propiedad de $breakpoints) */
+/* Mixin de transform para que este en todos los navegadores */
+/* Mixin para agrupar todas las propiedades de flexbox */
+/* Mixin para agrupar todas las propiedades de grid */
+/* Mixing Box Sizing */
+/*# sourceMappingURL=mixins.css.map */

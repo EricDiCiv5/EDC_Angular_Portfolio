@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/*Creación del mapa de puntos de corte*/
+/* Mixin para hacer responsive */
+/*Para usarla en los componentes, llamarlo como
+@include allmedias(nombre de la propiedad de $breakpoints) */
+/* Mixin de transform para que este en todos los navegadores */
+/* Mixin para agrupar todas las propiedades de flexbox */
+/* Mixin para agrupar todas las propiedades de grid */
+/* Mixing Box Sizing */
+/*Variables para familias de fuente de la web*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #e9e9d9), color-stop(90%, #21b1d5));
+  background: linear-gradient(to top, #e9e9d9 80%, #21b1d5 90%);
+}
+
+footer figure:first-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer figure:nth-of-type(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer figure:nth-of-type(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer figure:last-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer figure img {
+  width: 100%;
+}
+
+footer h4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: "DM Sans";
+  font-weight: bold;
+  font-size: 1.5vw;
+  word-break: keep-all;
+  width: 80%;
+}
+/*# sourceMappingURL=footer.component.css.map */
