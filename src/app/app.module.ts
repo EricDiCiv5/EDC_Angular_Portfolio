@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FullPageComponent } from './components/full-page/full-page.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ProgrammingLanguagesComponent } from './components/programming-languages/programming-languages.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     HeaderComponent,
     FooterComponent,
     FullPageComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ProgrammingLanguagesComponent
   ],
   imports: [
     BrowserModule,
