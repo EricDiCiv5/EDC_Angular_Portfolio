@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,+CAA+C;AAC/C,OAAO,CAAC,oEAAI;AACZ,OAAO,CAAC,sEAAI",
+    "sources": [
+        "tipography.scss"
+    ],
+    "names": [],
+    "file": "tipography.css"
+}

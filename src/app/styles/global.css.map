@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": ";AEAA,wCAAwC;AAWxC,iCAAiC;AAOjC;6DAC6D;AAE7D,+DAA+D;AAS/D,yDAAyD;AASzD,sDAAsD;AAiBtD,uBAAuB;ACxDvB,+CAA+C;AAC/C,OAAO,CAAC,oEAAI;AACZ,OAAO,CAAC,sEAAI",
+    "sources": [
+        "global.scss",
+        "colors.scss",
+        "mixins.scss",
+        "tipography.scss"
+    ],
+    "names": [],
+    "file": "global.css"
+}

@@ -1,0 +1,135 @@
+@import '../../styles/global.scss';
+
+header{
+  font-family: $primaryFont;
+  article{
+    @include flex(flex, row, wrap, space-between, center, center);
+    background: $headerLinearGrad;
+    padding:1.75%;
+    @include allmedias(androidLargeVert){
+      padding: 6%;
+      @include grid(grid, 2,3, 15%, 3%, center,center,center);
+    }
+    figure{
+      width:100%;
+      &:first-of-type{
+        flex: 2.5;
+        visibility: hidden;
+        margin-right: 25.5%;
+        @include allmedias(androidLargeHorit){
+          visibility: visible;
+          flex:1.25;
+          margin-right:32.5%;
+        }
+        @include allmedias(androidLargeVert){
+          grid-area: 2/1/3/2;
+          margin-right:95%;
+        }
+        &:hover{
+          cursor:pointer;
+        }
+      }
+      &:nth-of-type(2){
+        flex: 1;
+        margin-left: 25%;
+        @include allmedias(androidLargeVert){
+          grid-area: 2/2/3/3;
+          margin-left: 110%;
+        }
+        img{
+          float:right;
+          transition: 0.5s all;
+          &:hover{
+            box-shadow: inset 0px 0px 40px #0064c8;
+            border-radius: 25px;
+          }
+          @include allmedias(androidLargeVert){
+            width:66%;
+          }
+        }
+      }
+      &:last-of-type{
+        flex: 1;
+        margin-left: 5%;
+        @include allmedias(androidLargeVert){
+          grid-area: 2/3/3/4;
+          margin-left: 150%;
+        }
+        img{
+          float:left;
+          transition: 0.5s all;
+          &:hover{
+            box-shadow: inset 0px 0px 40px #ff2200;
+            border-radius: 25px;
+          }
+          @include allmedias(androidLargeVert){
+            width:66%;
+          }
+        }
+      }
+      img{
+        width:60%;
+        margin:auto;
+        @include allmedias(androidLargeHorit){
+          width: 85%;
+        }
+        @include allmedias(androidLargeVert){
+          width: 80%;
+        }
+      }
+    }
+    h1{
+      flex: 1;
+      font-weight: bold;
+      font-size: 4vw;
+      word-break: keep-all;
+      width: 80%;
+      text-align: center;
+      margin:auto;
+      line-height: 0.9;
+      @include allmedias(androidLargeHorit){
+        font-size: 5vw;
+      }
+      @include allmedias(androidLargeVert){
+        grid-area: 1/1/2/4;
+        font-size: 9vw;
+      }
+    }
+  }
+  nav{
+    background-color: $menuBkgColor;
+    vertical-align: middle;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: inset 2px -20px 12px 0px rgba(33,177,213,0.8);
+    z-index: 2;
+    @include allmedias(androidLargeHorit){
+      width:35%;
+      position:relative;
+      left:-40.5%;
+    }
+    ul{
+      @include flex(flex, row, wrap, space-evenly, center, center);
+      padding: 3vh;
+      align-content: center;
+      list-style-type: none;
+      font-size: 1.2vw;
+      @include allmedias(androidLargeHorit){
+          @include flex(flex, column, wrap, flex-start, flex-start, center);
+          font-size: 2.5vw;
+      }
+      @include allmedias(androidLargeVert){
+          font-size: 4vw;
+      }
+      a{
+        color: #333;
+        padding: 1vw;
+        transition: all .5s;
+        &:hover{
+          border-radius: 25px;
+          background-color: $hoverButtonShadow;
+        }
+      }
+    }
+  }
+
+}
