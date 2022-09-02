@@ -9,6 +9,7 @@ import { FullPageComponent } from './components/full-page/full-page.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ProgrammingLanguagesComponent } from './components/programming-languages/programming-languages.component';
 import { WebProjectsComponent } from './components/web-projects/web-projects.component';
+import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WebProjectsComponent } from './components/web-projects/web-projects.com
     FullPageComponent,
     AboutMeComponent,
     ProgrammingLanguagesComponent,
-    WebProjectsComponent
+    WebProjectsComponent,
+    YoutubeVideosComponent
   ],
   imports: [
     BrowserModule,
