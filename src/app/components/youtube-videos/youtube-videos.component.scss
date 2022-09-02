@@ -1,0 +1,5 @@
+@import '../../styles/global.scss';
+
+h4{
+  @include sectionTitles($primaryFont, 2.5vw, center, 75%, 2.5% auto, 2px solid #000, 1);
+}

@@ -61,3 +61,20 @@ $breakpoints: (
     -o-box-sizing: $box-model;
     box-sizing: $box-model;
 }
+
+@mixin sectionTitles($fontFam,
+  $fontSize,
+  $textAlign,
+  $wid,
+  $marg,
+  $borderBot,
+  $z_Idx
+  ) {
+  font-family: $fontFam;
+  font-size: $fontSize;
+  text-align: $textAlign;
+  width: $wid;
+  margin: $marg;
+  border-bottom: $borderBot;
+  z-index: $z_Idx;
+}
