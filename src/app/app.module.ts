@@ -13,6 +13,7 @@ import { YoutubeVideosComponent } from './components/youtube-videos/youtube-vide
 import { ContactComponent } from './components/contact/contact.component';
 
 import { NpmLibrariesModule } from './modules/npm-libraries/npm-libraries.module';
+import { MaterialAngularModule } from './modules/material-angular/material-angular.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NpmLibrariesModule } from './modules/npm-libraries/npm-libraries.module
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NpmLibrariesModule
+    NpmLibrariesModule,
+    MaterialAngularModule
   ],
   providers: [],
   bootstrap: [FullPageComponent]
