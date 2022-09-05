@@ -1,5 +1,28 @@
 @import '../../styles/global.scss';
 
-h4{
-  @include sectionTitles($primaryFont, 2.5vw, center, 75%, 2.5% auto, 2px solid #000, 1);
+.ytVideos-card {
+  max-width: 1200px;
+  background: $cardColor;
+  margin: 2% auto;
+  border-radius: 20px;
+  .mat-card-header{
+    @include flex(flex, row, wrap, center, center, center);
+    margin-bottom: 1%;
+    .h4{
+      @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+      padding-bottom: 5%;
+      color: $cardTitle;
+    }
+  }
+  .mat-card-content {
+    width: 100%;
+    margin-bottom: 16px;
+    .mat-card-image{
+      width: 50%;
+      height: auto;
+      margin: 3% auto; 
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px $menuBkgColor;
+    }
+  }
 }
