@@ -1,5 +1,64 @@
 @import '../../styles/global.scss';
 
-h4{
-  @include sectionTitles($primaryFont, 2.5vw, center, 75%, 2.5% auto, 2px solid #000, 1);
+.contact-card {
+  max-width: 1200px;
+  height: 90vh;
+  background: $cardColor;
+  margin: 2% auto;
+  border-radius: 20px;
+  .mat-card-header{
+    @include flex(flex, row, wrap, center, center, center);
+    margin-bottom: 1%;
+    .h4{
+      @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+      padding-bottom: 8%;
+      color: $cardTitle;
+    }
+  }
+  .mat-card-content {
+    @include flex(flex,column, wrap, center, center, center);
+    width: 50%;
+    margin-bottom: 16px;
+    font-size: 1vw;
+    .mat-form-field{
+      width: 100%;
+      label{
+        margin-left: 1.5%;
+        font-size: 1.3vw;
+        z-index: 6;
+      }
+      input, textarea{
+        font-size: 1.5vw;
+        font-family: $secondaryFont;
+        background-color: $menuBkgColor;
+        border-radius: 20px;
+        padding: 1.5%;
+        width: 96%;
+      }
+      textarea{
+        height: 20vh;
+      }
+    }
+    .mat-form-field-infix {
+      padding: 0.15em 0;
+    }
+    .mat-raised-button{
+      background-color: #999;
+      font-size: 1.25vw;
+      font-family: $secondaryFont;
+      border-radius: 10%;
+      color: #6de2ff;
+      box-shadow: inset 1px 2px 15px $menuBkgColor;
+      margin: 2% auto;
+      padding: 1% 2.5%;
+      transition: 1s all;
+      &:hover{
+        color: #999;
+        box-shadow: inset 1px 2px 15px $menuBkgColor;
+        background-color: #6de2ff;
+        padding: 1.5% 4%;
+        font-size: 1.75vw;
+      }
+    }
+  }
 }

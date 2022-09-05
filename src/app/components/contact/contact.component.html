@@ -1,1 +1,24 @@
-<h4>{{'buttonsAndSections.button5' | translate }}</h4>
+<mat-card class="contact-card">
+  <mat-card-header>
+    <mat-card-title class="h4">{{'buttonsAndSections.button5' | translate }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field appearance="fill">
+      <label>First Name</label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <label>Last Name</label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <label>Message's Matter</label>
+      <input matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <label>Description</label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+    <button mat-raised-button>Send to my mail</button>
+  </mat-card-content>
+</mat-card>
