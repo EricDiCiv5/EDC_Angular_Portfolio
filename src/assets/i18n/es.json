@@ -7,7 +7,10 @@
         "button5": "CONTACTO"
     },
     "aboutMe": {
-      "bio" : "Saludos! Me llamo Eric Díaz, soy un chico español de 28 años actualmente. Empezé mis estudios superiores cursando un bachillerato científico-tecnològico en el instituto INS-l'Estatut de Rubí movido por mi interés por estos campos. Después, estudié el grado universitario de Ingenieria de sistemas Audiovisuales en la UPC de Terrassa con la idea de poder tener una serie de herramientas para trabajar en profesiones relacionadas con la música y el sonido, pero, hace unos años cambié de idea y decidí profundizar en el sector de desarrollo web ya que ví que podría mostrar mi lado más creativo y autónomo en un sector con una gran demanda y que se me empezaba a dar bien.",
+      "bio1" : "Saludos! Me llamo Eric Díaz, soy un chico español de 28 años actualmente.",
+      "bio2": "Empezé mis estudios superiores cursando un bachillerato científico-tecnològico en el instituto INS-l'Estatut de Rubí.",
+      "bio3": "Después, estudié el grado universitario de Ingenieria de sistemas Audiovisuales en la UPC de Terrassa.",
+      "bio4": "Hace unos años cambié de idea y decidí profundizar en el sector de desarrollo web ya que ví que podría mostrar mi lado más creativo y autónomo en un sector con una gran demanda y que se me empezaba a dar bien.",
       "hobbies": "Mis dos grandes aficiones son la música y el pádel"
     }
 }
