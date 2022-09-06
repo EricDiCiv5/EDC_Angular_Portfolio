@@ -6,6 +6,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [],
@@ -18,12 +19,14 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
             useFactory: HttpLoaderFactory,
             deps: [HttpClient]
         }
-    })
+    }),
+    NgImageSliderModule
   ],
   exports: [
     CommonModule,
     HttpClientModule,
-    TranslateModule
+    TranslateModule,
+    NgImageSliderModule
   ]
 })
 export class NpmLibrariesModule { }
