@@ -24,6 +24,7 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "aos": "^3.0.0-beta.6",
+    "ng-image-slider": "^6.0.0",
     "ngx-translate": "^0.0.1-security",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
