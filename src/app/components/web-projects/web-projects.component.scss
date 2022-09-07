@@ -3,6 +3,7 @@
 .webProj-card {
   max-width: 1200px;
   background: $cardColor;
+  height: 40vh;
   margin: 2% auto;
   border-radius: 20px;
   .mat-card-header{
@@ -17,5 +18,16 @@
   .mat-card-content {
     width: 100%;
     margin-bottom: 16px;
+    .ng-image-slider .ng-image-slider-container .main .main-inner{
+      width: 1760px;
+      padding: 0;
+      height: 200%;
+    }
   }
 }
+
+.image .ng-star-inserted{
+  height: 200%;
+}
+
+
