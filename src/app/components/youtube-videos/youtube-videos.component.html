@@ -1,9 +1,12 @@
-<mat-card class="ytVideos-card">
-  <mat-card-header>
-    <mat-card-title class="h4">{{'buttonsAndSections.button4' | translate }}</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <img mat-card-image src="../../../assets/images/youtube_Thumbnails/MiniaturaYoutube_1.png"
-      alt="1era miniatura de Youtube">
-  </mat-card-content>
-</mat-card>
+<h4 class="h4">{{'buttonsAndSections.button4' | translate }}</h4>
+
+<div *ngIf="images && images.length > 0" class="carousel-container">
+  <img *ngFor="let image of images; let i = index" [src]="image.imgSrc" [alt]="image.imgAlt"
+    [ngClass]="{'image-active': selectedIndex === i}" class="fade">
+
+  <div *ngIf="indicators" class="carousel-dot-container">
+    <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active': selectedIndex === i}"
+      (click)="selectImage(i)">
+    </span>
+  </div>
+</div>
