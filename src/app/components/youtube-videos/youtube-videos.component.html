@@ -1,12 +1,12 @@
-<h4 class="h4">{{'buttonsAndSections.button4' | translate }}</h4>
+<mat-card class="ytVideos-card">
+  <mat-card-header>
+    <mat-card-title class="h4">{{'buttonsAndSections.button4' | translate }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="images && images.length > 0" class="carousel-container">
+      <img mat-card-image *ngFor="let image of images; let i = index" [src]="image.imgSrc" [alt]="image.imgAlt"
+        [ngClass]="{'image-active': selectedIndex === i}" class="fade">
 
-<div *ngIf="images && images.length > 0" class="carousel-container">
-  <img *ngFor="let image of images; let i = index" [src]="image.imgSrc" [alt]="image.imgAlt"
-    [ngClass]="{'image-active': selectedIndex === i}" class="fade">
-
-  <div *ngIf="indicators" class="carousel-dot-container">
-    <span *ngFor="let dot of images; let i=index" class="dot" [ngClass]="{'active': selectedIndex === i}"
-      (click)="selectImage(i)">
-    </span>
-  </div>
-</div>
+    </div>
+  </mat-card-content>
+</mat-card>

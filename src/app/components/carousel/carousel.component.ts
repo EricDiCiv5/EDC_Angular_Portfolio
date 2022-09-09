@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CarouselImages } from 'src/app/models/carousel-images';
 
 @Component({
   selector: 'app-carousel',
