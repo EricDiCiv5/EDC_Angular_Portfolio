@@ -8,6 +8,7 @@ import { CarouselImages } from 'src/app/models/carousel-images';
 })
 export class YoutubeVideosComponent implements OnInit {
   @Input() images: CarouselImages[] = [];
+  @Input() ytLinks: string[] = [];
   @Input() indicators = true;
   @Input() autoSlide = false;
   @Input() slideInterval = 3000;
@@ -33,7 +34,7 @@ export class YoutubeVideosComponent implements OnInit {
   }
 
   onNextClick(){
-    if(this.selectedIndex === this.images.length - 1) {
+    if(this.selectedIndex === this.images.length - 1 && this.selectedIndex === this.ytLinks.length - 1) {
       this.selectedIndex = 0;
     }
     else {

@@ -4,9 +4,10 @@
   </mat-card-header>
   <mat-card-content>
     <div *ngIf="images && images.length > 0" class="carousel-container">
-      <img mat-card-image *ngFor="let image of images; let i = index" [src]="image.imgSrc" [alt]="image.imgAlt"
-        [ngClass]="{'image-active': selectedIndex === i}" class="fade">
-
+      <a *ngFor="let link of ytLinks; let i = index" [href]="link" target="_blank" rel="noopener noreferrer">
+        <img mat-card-image *ngFor="let image of images; let i = index" [src]="image.imgSrc" [alt]="image.imgAlt"
+          [ngClass]="{'image-active': selectedIndex === i}" class="fade">
+      </a>
     </div>
   </mat-card-content>
 </mat-card>

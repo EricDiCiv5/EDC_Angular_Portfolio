@@ -11,6 +11,22 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  public ytLinks = [
+    'https://www.youtube.com/watch?v=YFa8ESCu-6o',
+    'https://www.youtube.com/watch?v=HOcgFs_ds3M',
+    'https://www.youtube.com/watch?v=uZwPo5bNhoI',
+    'https://www.youtube.com/watch?v=uFPUps2ipok',
+    'https://www.youtube.com/watch?v=mnXpWmSe7Q8',
+    'https://www.youtube.com/watch?v=eiJuQIcw9aY',
+    'https://www.youtube.com/watch?v=8I5OGLwRQXE',
+    'https://www.youtube.com/watch?v=RrPcvluy1u0',
+    'https://www.youtube.com/watch?v=LUsVQ12frrQ',
+    'https://www.youtube.com/watch?v=iiZqFuRs2eY',
+    'https://www.youtube.com/watch?v=FPvaPGCyaSs',
+    'https://www.youtube.com/watch?v=64ZFYazDZbo',
+    'https://www.youtube.com/watch?v=Z45t7p4pR0s',
+    'https://www.youtube.com/watch?v=1PwNierjk_k'
+  ]
 
   public images = [
   {
