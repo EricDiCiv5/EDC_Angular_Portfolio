@@ -15,21 +15,19 @@ footer{
     @include allmedias(androidLargeVert){
       @include grid(grid, 2, 2, 7.5%, 7.5%, center, center, center);
     }
-    figure{
-      width: 100%;
-      flex: 0.2;
-      margin-right: 1%;
-      cursor:pointer;
+    a{
       &:first-of-type{
-        img{
-          &:hover{
-            box-shadow: inset 0px 0px 40px #666;
-            border-radius: 25px;
+        figure{
+          img{
+            &:hover{
+              box-shadow: inset 0px 0px 40px #666;
+              border-radius: 25px;
+            }
           }
         }
-
-        }
-        &:nth-of-type(2){
+      }
+      &:nth-of-type(2){
+        figure{
           img{
             &:hover{
               box-shadow: 0px 0px 15px #0a5679;
@@ -37,37 +35,47 @@ footer{
             }
           }
         }
-        &:nth-of-type(3){
+      }
+      &:nth-of-type(3){
+        figure{
           img{
             &:hover{
               border-radius: 5px;
-              box-shadow: inset 0px 0px 40px #c4302b;
+              box-shadow: inset 0px 0px 30px #c4302b;
             }
           }
         }
-        &:last-of-type{
+      }
+      &:last-of-type{
+        figure{
           img{
             &:hover{
               border-radius: 5px;
               box-shadow: inset 0px 0px 30px #70deff;
             }
           }
-
-        }
-      img{
-        width:75%;
-        justify-content: center;
-        align-self: center;
-        transition: all 0.5s;
-        @include allmedias(androidLargeHorit){
-          width: 80%;
-        }
-        @include allmedias(androidLargeVert){
-          width: 60%;
         }
       }
-      @include allmedias(androidLargeHorit){
-        flex: 0.22;
+      figure{
+        width: 100%;
+        flex: 0.2;
+        margin-right: 1%;
+        cursor:pointer;
+        img{
+          width:75%;
+          justify-content: center;
+          align-self: center;
+          transition: all 0.5s;
+          @include allmedias(androidLargeHorit){
+            width: 80%;
+          }
+          @include allmedias(androidLargeVert){
+            width: 60%;
+          }
+        }
+        @include allmedias(androidLargeHorit){
+          flex: 0.22;
+        }
       }
     }
   }
