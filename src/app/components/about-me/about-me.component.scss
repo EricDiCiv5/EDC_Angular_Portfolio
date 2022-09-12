@@ -3,13 +3,28 @@
 .example-card {
   max-width: 1200px;
   background: $cardColor;
-  margin: 2% auto;
+  margin: 6% auto;
+  height: 90vh;
   border-radius: 20px;
+  @include allmedias(androidLargeHorit){
+    height: 52vh;
+    margin: 9% auto;
+  }
+  @include allmedias(androidLargeVert){
+    height: 92vh;
+  }
 }
 
 .mat-card-header{
   @include flex(flex, row, wrap, center, center, center);
   margin-bottom: 3%;
+  @include allmedias(androidLargeHorit){
+    margin-bottom: 2%;
+  }
+  @include allmedias(androidLargeVert){
+    @include flex(flex, column, wrap, center, center, center);
+    margin-bottom: 1.5%;
+  }
 }
 
 .mat-card-image {
@@ -21,6 +36,14 @@
     vertical-align:middle;
     border-radius: 20px;
     box-shadow: 1px 1px 12px #ccfaff;
+    @include allmedias(androidLargeHorit){
+      width: 40%;
+    }
+    @include allmedias(androidLargeHorit){
+      width: 80%;
+      display:block;
+      margin:auto;
+    }
 }
 
 .mat-card-content {
@@ -34,8 +57,20 @@
     line-height: 1.33;
     text-align:justify;
     word-break:keep-all;
+    @include allmedias(androidLargeHorit){
+      font-size: 2vw;
+    }
+    @include allmedias(androidLargeVert){
+      font-size: 4.5vw;
+      width: 80%;
+      display:block;
+      margin:auto;
+    }
     p{
       margin: 4% auto;
+      @include allmedias(androidLargeHorit){
+        margin: 6% auto;
+      }
     }
 }
 
@@ -47,4 +82,10 @@
   @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
   padding-bottom: 8%;
   color: $cardTitle;
+  @include allmedias(androidLargeHorit){
+    @include sectionTitles($primaryFont, 4vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+  }
+  @include allmedias(androidLargeVert){
+    @include sectionTitles($primaryFont, 7.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+  }
 }
