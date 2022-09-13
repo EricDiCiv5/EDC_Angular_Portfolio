@@ -2,6 +2,7 @@
 
 header{
   font-family: $primaryFont;
+  position:relative;
   article{
     @include flex(flex, row, wrap, space-between, center, center);
     background: $headerLinearGrad;
@@ -98,6 +99,7 @@ header{
     }
   }
   nav{
+    position:relative;
     background-color: $menuBkgColor;
     vertical-align: middle;
     border-radius: 0px 0px 25px 25px;
@@ -105,7 +107,7 @@ header{
     z-index: 2;
     @include allmedias(androidLargeHorit){
       width:35%;
-      position:relative;
+      position:absolute;
       left:-40.5%;
     }
     ul{

@@ -1,9 +1,9 @@
 <mat-card class="webProj-card">
-  <mat-card-header>
+  <mat-card-header id="webProjs">
     <mat-card-title class="h4">{{'buttonsAndSections.button3' | translate }}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <ng-image-slider [lazyLoading]="true" [imageSize]="{width: '1000px', height: '200%', space: 100}" [infinite]="true"
+    <ng-image-slider [lazyLoading]="true" [imageSize]="{ width: '90%', height: 350, space: 50}" [infinite]="true"
       [images]="webDesigns" #nav>
     </ng-image-slider>
   </mat-card-content>

@@ -3,12 +3,12 @@
 .example-card {
   max-width: 1200px;
   background: $cardColor;
-  margin: 6% auto;
+  margin: 2% auto 4%;
   height: 90vh;
   border-radius: 20px;
   @include allmedias(androidLargeHorit){
     height: 52vh;
-    margin: 9% auto;
+    margin: 3% auto 8%;
   }
   @include allmedias(androidLargeVert){
     height: 92vh;
@@ -39,7 +39,7 @@
     @include allmedias(androidLargeHorit){
       width: 40%;
     }
-    @include allmedias(androidLargeHorit){
+    @include allmedias(androidLargeVert){
       width: 80%;
       display:block;
       margin:auto;

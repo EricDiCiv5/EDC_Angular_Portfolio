@@ -4,8 +4,15 @@
   max-width: 1200px;
   background: $cardColor;
   height: 40vh;
-  margin: 2% auto;
+  margin: 2% auto 4%;
   border-radius: 20px;
+  @include allmedias(androidLargeHorit){
+    height: 45vh;
+    margin: 3% auto 8%;
+  }
+  @include allmedias(androidLargeHorit){
+    height: 33vh;
+  }
   .mat-card-header{
     @include flex(flex, row, wrap, center, center, center);
     margin-bottom: 1%;
@@ -13,13 +20,20 @@
       @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
       padding-bottom: 5%;
       color: $cardTitle;
-    }
+      @include allmedias(androidLargeHorit){
+        @include sectionTitles($primaryFont, 4vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+      }
+      @include allmedias(androidLargeVert){
+        @include sectionTitles($primaryFont, 7.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+        line-height: 1.2;
+      }
+    } 
   }
   .mat-card-content {
     width: 100%;
     margin-bottom: 16px;
     .ng-image-slider .ng-image-slider-container .main .main-inner{
-      width: 1760px;
+      width: 2060px;
       padding: 0;
       height: 200%;
     }
@@ -30,4 +44,6 @@
   height: 200%;
 }
 
-
+.main-inner.ng-star-inserted{
+  width: 700px;
+}

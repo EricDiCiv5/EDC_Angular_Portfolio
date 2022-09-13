@@ -4,11 +4,11 @@
   max-width: 1200px;
   height: 105vh;
   background: $cardColor;
-  margin: 6% auto;
+  margin: 3% auto 4%;
   border-radius: 20px;
   @include allmedias(androidLargeHorit){
-    height: 90vh;
-    margin: 9% auto;
+    height: 102vh;
+    margin: 3% auto 8%;
   }
   @include allmedias(androidLargeVert){
     height: 80vh;
