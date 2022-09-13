@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
 
   moveNav(): void {
     if(document.getElementById(`burgerButton`)!.style.left == `-40.5%`) {
-      document.getElementById('burgerButton')!.style.position = 'relative';
+      document.getElementById('burgerButton')!.style.position = 'absolute';
       document.getElementById('burgerButton')!.style.transition = '0.5s ease-out';
       document.getElementById('burgerButton')!.style.left = '0%';
     } else {

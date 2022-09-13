@@ -4,8 +4,15 @@
   max-width: 1200px;
   height: 75vh;
   background: $cardColor;
-  margin: 2% auto;
+  margin: 2% auto 4%;
   border-radius: 20px;
+  @include allmedias(androidLargeHorit){
+    height: 140vh;
+    margin: 3% auto 8%;
+  }
+  @include allmedias(androidLargeVert){
+    height: 65vh;
+  }
   .mat-card-header{
     @include flex(flex, row, wrap, center, center, center);
     margin-bottom: 3%;
@@ -13,6 +20,13 @@
       @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
       padding-bottom: 3%;
       color: $cardTitle;
+      @include allmedias(androidLargeHorit){
+        @include sectionTitles($primaryFont, 4vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+      }
+      @include allmedias(androidLargeVert){
+        @include sectionTitles($primaryFont, 7.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
+        line-height: 1.2;
+      }
     }
   }
   .mat-card-content {
@@ -29,8 +43,22 @@
     .mat-grid-list{
       width: 1200px;
       margin:auto;
+      @include allmedias(androidLargeHorit){
+        @include flex(flex, row, wrap, center, center, center);
+        width: 750px;
+      }
+      @include allmedias(androidLargeVert){
+        @include flex(flex, column, nowrap, center, center, center);
+        width: 300px;
+      }
       .mat-grid-tile{
         width: 400px;
+        @include allmedias(androidLargeHorit){
+          width: 400px;
+        }
+        @include allmedias(androidLargeVert){
+          width: 400px;
+        }
         &:hover .flip-front{
           transform: perspective(500px) rotateY(-180deg);
         }
@@ -44,6 +72,12 @@
           transition: all 0.75s ease-in-out;
           backface-visibility: hidden;
           transform: perspective(500px) rotateY(0deg);
+          @include allmedias(androidLargeHorit){
+            width: 50%;
+          }
+          @include allmedias(androidLargeVert){
+            width: 40%;
+          }
           .mat-card-image {
             max-height: 197.5px;
             margin: 0 -16px 16px 1.5%;
@@ -53,6 +87,10 @@
             border-radius: 20px;
             box-shadow: 0px 0px 12px $menuBkgColor;
             background-color: #d1d1d1;
+            margin: auto;
+            @include allmedias(androidLargeVert){
+              max-height: 197.5px;
+            }
           }
         }
         .flip-back{
@@ -69,12 +107,36 @@
           transition: all 0.75s ease-in-out;
           backface-visibility: hidden;
           transform: perspective(500px) rotateY(180deg);
+          margin:auto;
+          @include allmedias(androidLargeHorit){
+            padding: 8%;
+          }
+          @include allmedias(androidLargeVert){
+            padding: 14%;
+          }
           h5{
             font-family: $primaryFont;
             font-size: 1.25vw;
             font-weight: bold;
             text-align:center;
-          }  
+            @include allmedias(androidLargeHorit){
+              font-size: 2.5vw;
+            }
+            @include allmedias(androidLargeVert){
+              font-size: 4vw;
+            }
+          }
+          article{
+            i{
+              font-size: 1.1vw;
+              @include allmedias(androidLargeHorit){
+                font-size: 2.2vw;
+              }
+              @include allmedias(androidLargeVert){
+                font-size: 3.3vw;
+              }
+            }
+          }
         }
       }
     }
@@ -82,7 +144,19 @@
 }
 
 
-
+.mat-grid-tile-content {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 
 

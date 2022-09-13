@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-web-projects',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebProjectsComponent implements OnInit {
 
-  constructor() { }
+  public wide:number = 1000;
+  public isMobile:boolean = false;
+
+  constructor(private breakpointObs: BreakpointObserver ) {}
 
   ngOnInit(): void {
+    this.breakpointObs.observe(['(max-width: 800px)', '(max-width: 360px)']).subscribe(() => this.threeBreakpoints());
+  }
+
+  threeBreakpoints(){
+    if(this.breakpointObs.isMatched('(max-width: 800px)')){
+      this.wide = 700;
+    }
+    else if(this.breakpointObs.isMatched('(max-width: 360px)')){
+      this.wide = 300;
+    }
+    else {
+      this.wide = 1000;
+    }
   }
 
   webDesigns: Array<object> = [
