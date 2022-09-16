@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver} from '@angular/cdk/layout';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-web-projects',
@@ -9,9 +10,10 @@ import { BreakpointObserver} from '@angular/cdk/layout';
 export class WebProjectsComponent implements OnInit {
 
   public wide:number = 1000;
+  public link!:string;
   public isMobile:boolean = false;
 
-  constructor(private breakpointObs: BreakpointObserver ) {}
+  constructor(private breakpointObs: BreakpointObserver, private route: Router ) {}
 
   ngOnInit(): void {
     this.breakpointObs.observe(['(max-width: 800px)', '(max-width: 360px)']).subscribe(() => this.threeBreakpoints());
@@ -26,6 +28,21 @@ export class WebProjectsComponent implements OnInit {
     }
     else {
       this.wide = 1000;
+    }
+  }
+
+  imageOnClick(index: number) {
+    switch(index){
+      case 0:
+        window.open('http://edc-portfolio.web.app/', '_blank');
+        break;
+      case 1:
+        window.open('http://calc-desgravacion-app-ericdiaz.herokuapp.com/', '_blank');
+        break;
+      case 2:
+        window.open('http://layout-goldenstatewarriors-edc.herokuapp.com/', '_blank');
+        break;
+      default: console.log("Web Project Not found");
     }
   }
 
