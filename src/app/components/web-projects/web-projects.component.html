@@ -4,7 +4,7 @@
   </mat-card-header>
   <mat-card-content>
     <ng-image-slider [lazyLoading]="true" [imageSize]="{ width: '90%', height: 350, space: 50}" [infinite]="true"
-      [images]="webDesigns" #nav>
+      [images]="webDesigns" #nav (imageClick)="imageOnClick($event)">
     </ng-image-slider>
   </mat-card-content>
 </mat-card>
