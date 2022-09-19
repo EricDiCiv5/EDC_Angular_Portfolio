@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ## Configuración
-image="edc-portfolio-angular"          ## 👈 Escribe el nombre de tu imagen de docker
-server="edc-portfolio-angular"     ## 👈 Escribe el nombre del servidor heroku
+image="edc-portfolio-ng"          ## 👈 Escribe el nombre de tu imagen de docker
+server="edc-portfolio-ng"     ## 👈 Escribe el nombre del servidor heroku
 
 ## Descargamos la configuración de nginx para Angular.
 echo "Creamos la carpega nginx y nos descargamos la configuración."
