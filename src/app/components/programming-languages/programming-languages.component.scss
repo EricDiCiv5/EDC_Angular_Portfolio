@@ -2,20 +2,21 @@
 
 .progLang-card {
   max-width: 1200px;
-  height: 75vh;
+  height: 105vh;
   background: $cardColor;
   margin: 2% auto 4%;
   border-radius: 20px;
   @include allmedias(androidLargeHorit){
-    height: 140vh;
     margin: 3% auto 8%;
+    height: 190vh;
+    width: 80%;
   }
   @include allmedias(androidLargeVert){
-    height: 65vh;
+    height: 105vh;
   }
   .mat-card-header{
     @include flex(flex, row, wrap, center, center, center);
-    margin-bottom: 3%;
+    margin-bottom: 0%;
     .h4{
       @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
       padding-bottom: 3%;
@@ -26,6 +27,7 @@
       @include allmedias(androidLargeVert){
         @include sectionTitles($primaryFont, 7.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
         line-height: 1.2;
+        padding-bottom: 1%;
       }
     }
   }
@@ -45,11 +47,11 @@
       margin:auto;
       @include allmedias(androidLargeHorit){
         @include flex(flex, row, wrap, center, center, center);
-        width: 750px;
+        width: 75vw;
       }
       @include allmedias(androidLargeVert){
         @include flex(flex, column, nowrap, center, center, center);
-        width: 300px;
+        width: 68vw;
       }
       .mat-grid-tile{
         width: 400px;
@@ -58,6 +60,7 @@
         }
         @include allmedias(androidLargeVert){
           width: 400px;
+          margin: 25% auto;
         }
         &:hover .flip-front{
           transform: perspective(500px) rotateY(-180deg);
@@ -75,9 +78,6 @@
           @include allmedias(androidLargeHorit){
             width: 50%;
           }
-          @include allmedias(androidLargeVert){
-            width: 40%;
-          }
           .mat-card-image {
             max-height: 197.5px;
             margin: 0 -16px 16px 1.5%;
@@ -94,6 +94,7 @@
           }
         }
         .flip-back{
+          max-height: 207.5px;
           padding: 4%;
           border-radius: 20px;
           display:flex;
@@ -112,7 +113,7 @@
             padding: 8%;
           }
           @include allmedias(androidLargeVert){
-            padding: 14%;
+            padding: 10%;
           }
           h5{
             font-family: $primaryFont;
@@ -123,7 +124,7 @@
               font-size: 2.5vw;
             }
             @include allmedias(androidLargeVert){
-              font-size: 4vw;
+              font-size: 4.5vw;
             }
           }
           article{

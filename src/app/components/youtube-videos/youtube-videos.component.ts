@@ -34,7 +34,7 @@ export class YoutubeVideosComponent implements OnInit {
   }
 
   onNextClick(){
-    if(this.selectedIndex === this.images.length - 1 && this.selectedIndex === this.ytLinks.length - 1) {
+    if(this.selectedIndex === this.images.length - 1) {
       this.selectedIndex = 0;
     }
     else {

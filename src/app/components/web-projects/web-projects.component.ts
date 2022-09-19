@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BreakpointObserver} from '@angular/cdk/layout';
 import { Router } from '@angular/router';
+import { NgImageSliderComponent } from 'ng-image-slider';
 
 @Component({
   selector: 'app-web-projects',
@@ -8,12 +9,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./web-projects.component.scss']
 })
 export class WebProjectsComponent implements OnInit {
+  @ViewChild('nav') slider!: NgImageSliderComponent;
 
   public wide:number = 1000;
   public link!:string;
   public isMobile:boolean = false;
 
   constructor(private breakpointObs: BreakpointObserver, private route: Router ) {}
+
+
+  
 
   ngOnInit(): void {
     this.breakpointObs.observe(['(max-width: 800px)', '(max-width: 360px)']).subscribe(() => this.threeBreakpoints());
@@ -65,4 +70,11 @@ export class WebProjectsComponent implements OnInit {
       }
   ];
 
+  prevImageClick(){
+    this.slider.prev();
+  }
+
+  nextImageClick(){
+    this.slider.next();
+  }
 }

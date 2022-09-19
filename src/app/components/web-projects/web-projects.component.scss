@@ -3,22 +3,19 @@
 .webProj-card {
   max-width: 1200px;
   background: $cardColor;
-  height: 40vh;
+  height: auto;
   margin: 2% auto 4%;
   border-radius: 20px;
   @include allmedias(androidLargeHorit){
-    height: 45vh;
     margin: 3% auto 8%;
-  }
-  @include allmedias(androidLargeHorit){
-    height: 33vh;
+    width: 80%;
   }
   .mat-card-header{
     @include flex(flex, row, wrap, center, center, center);
     margin-bottom: 1%;
     .h4{
       @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
-      padding-bottom: 5%;
+      padding-bottom: 1%;
       color: $cardTitle;
       @include allmedias(androidLargeHorit){
         @include sectionTitles($primaryFont, 4vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
@@ -36,6 +33,45 @@
       width: 2060px;
       padding: 0;
       height: 200%;
+      position:relative;
+    }
+    button{
+      background:none;
+      border:none;
+      font-size: 3vw;
+      color: $menuBkgColor;
+      transition: 0.3s all;
+      @include allmedias(androidLargeHorit){
+        font-size: 4vw;
+      }
+      @include allmedias(androidLargeVert){
+        font-size: 6vw;
+      }
+      &:hover{
+        color: rgb(29, 95, 119);
+      }
+      .fa-circle-chevron-left{
+        position:absolute;
+        left: 1%;
+        bottom: 35%;
+        @include allmedias(androidLargeHorit){
+          left: 2%;
+        }
+        @include allmedias(androidLargeVert){
+          left: 3%;
+        }
+      }
+      .fa-circle-chevron-right{
+        position:absolute;
+        left: 95%;
+        bottom: 35%;
+        @include allmedias(androidLargeHorit){
+          left: 93%;
+        }
+        @include allmedias(androidLargeVert){
+          left: 91%;
+        }
+      }
     }
   }
 }

@@ -3,8 +3,10 @@
     <mat-card-title class="h4">{{'buttonsAndSections.button3' | translate }}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <ng-image-slider [lazyLoading]="true" [imageSize]="{ width: '90%', height: 350, space: 50}" [infinite]="true"
-      [images]="webDesigns" #nav (imageClick)="imageOnClick($event)">
+    <ng-image-slider [lazyLoading]="true" [imageSize]="{ width: '90%', height: 350, space: 42}" [infinite]="true"
+      [images]="webDesigns" #nav (imageClick)="imageOnClick($event)"  [showArrow]="false">
     </ng-image-slider>
+    <button (click)="prevImageClick()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+    <button (click)="nextImageClick()"><i class="fa-solid fa-circle-chevron-right"></i></button>
   </mat-card-content>
 </mat-card>
