@@ -2,16 +2,13 @@
 
 .contact-card {
   max-width: 1200px;
-  height: 105vh;
+  height: auto;
   background: $cardColor;
   margin: 3% auto 4%;
   border-radius: 20px;
   @include allmedias(androidLargeHorit){
-    height: 102vh;
     margin: 3% auto 8%;
-  }
-  @include allmedias(androidLargeVert){
-    height: 80vh;
+    width: 80%;
   }
   .mat-card-header{
     @include flex(flex, row, wrap, center, center, center);

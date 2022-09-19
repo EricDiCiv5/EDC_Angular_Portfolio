@@ -17,6 +17,7 @@ import { NpmLibrariesModule } from './modules/npm-libraries/npm-libraries.module
 import { MaterialAngularModule } from './modules/material-angular/material-angular.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
