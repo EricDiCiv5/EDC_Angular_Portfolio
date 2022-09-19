@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": ";AAAA,wCAAwC;AAWxC,iCAAiC;AAOjC;6DAC6D;AAE7D,+DAA+D;AAS/D,yDAAyD;AASzD,sDAAsD;AAiBtD,uBAAuB",
-    "sources": [
-        "mixins.scss"
-    ],
-    "names": [],
-    "file": "mixins.css"
-}
+{"version":3,"sources":["mixins.css","mixins.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB,uCAAA;AAWA,gCAAA;AAOA;4DAAA;AAGA,8DAAA;AASA,wDAAA;AASA,qDAAA;AAiBA,sBAAA","file":"mixins.css"}

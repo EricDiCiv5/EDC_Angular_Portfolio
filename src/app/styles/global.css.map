@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": ";AEAA,wCAAwC;AAWxC,iCAAiC;AAOjC;6DAC6D;AAE7D,+DAA+D;AAS/D,yDAAyD;AASzD,sDAAsD;AAiBtD,uBAAuB;ACxDvB,+CAA+C;AAC/C,OAAO,CAAC,oEAAI;AACZ,OAAO,CAAC,sEAAI",
-    "sources": [
-        "global.scss",
-        "colors.scss",
-        "mixins.scss",
-        "tipography.scss"
-    ],
-    "names": [],
-    "file": "global.css"
-}
+{"version":3,"sources":["global.css","mixins.scss","tipography.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB,uCAAA;AAWA,gCAAA;AAOA;4DAAA;AAGA,8DAAA;AASA,wDAAA;AASA,qDAAA;AAiBA,sBAAA;ACxDA,8CAAA;AACQ,4EAAA;AACA,8EAAA","file":"global.css"}

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*Creación del mapa de puntos de corte*/
+/* Mixin para hacer responsive */
+/*Para usarla en los componentes, llamarlo como
+@include allmedias(nombre de la propiedad de $breakpoints) */
+/* Mixin de transform para que este en todos los navegadores */
+/* Mixin para agrupar todas las propiedades de flexbox */
+/* Mixin para agrupar todas las propiedades de grid */
+/* Mixing Box Sizing */
+/*Variables para familias de fuente de la web*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.contact-card {
+  max-width: 1200px;
+  height: auto;
+  background: rgb(33, 177, 213);
+  margin: 3% auto 4%;
+  border-radius: 20px;
+}
+@media screen and (max-width: 800px) {
+  .contact-card {
+    margin: 3% auto 8%;
+    width: 80%;
+  }
+}
+.contact-card .mat-card-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 1%;
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-header {
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact-card .mat-card-header {
+    margin-bottom: 4%;
+  }
+}
+.contact-card .mat-card-header .h4 {
+  font-family: "Quicksand";
+  font-size: 2.5vw;
+  text-align: center;
+  width: 100%;
+  margin: 10% auto;
+  border-bottom: 2px solid #fbfaeb;
+  z-index: 1;
+  padding-bottom: 8%;
+  color: #fbfaeb;
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-header .h4 {
+    font-family: "Quicksand";
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    margin: 10% auto;
+    border-bottom: 2px solid #fbfaeb;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact-card .mat-card-header .h4 {
+    font-family: "Quicksand";
+    font-size: 7.5vw;
+    text-align: center;
+    width: 100%;
+    margin: 10% auto;
+    border-bottom: 2px solid #fbfaeb;
+    z-index: 1;
+  }
+}
+.contact-card .mat-card-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-content {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-content {
+    margin-bottom: 32px;
+  }
+}
+.contact-card .mat-card-content .mat-form-field {
+  width: 100%;
+  margin: auto;
+}
+.contact-card .mat-card-content .mat-form-field label {
+  margin-left: 1.5%;
+  font-size: 1.3vw;
+  z-index: 6;
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-content .mat-form-field label {
+    margin-left: 2.5%;
+    font-size: 2.2vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact-card .mat-card-content .mat-form-field label {
+    margin-left: 3.5%;
+    font-size: 4.4vw;
+  }
+}
+.contact-card .mat-card-content .mat-form-field input, .contact-card .mat-card-content .mat-form-field textarea {
+  font-size: 1.5vw;
+  font-family: "DM Sans";
+  background-color: rgb(233, 233, 217);
+  border-radius: 20px;
+  padding: 1.5%;
+  width: 96%;
+  margin-top: 1%;
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-content .mat-form-field input, .contact-card .mat-card-content .mat-form-field textarea {
+    font-size: 2vw;
+    margin-top: 2%;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-content .mat-form-field input, .contact-card .mat-card-content .mat-form-field textarea {
+    font-size: 4vw;
+    margin-top: 3%;
+    padding: 2.5%;
+  }
+}
+.contact-card .mat-card-content .mat-form-field textarea {
+  height: 20vh;
+}
+.contact-card .mat-card-content .mat-form-field-infix {
+  padding: 0.15em 0;
+}
+.contact-card .mat-card-content .mat-raised-button {
+  display: block;
+  background-color: #999;
+  font-size: 1.25vw;
+  font-family: "DM Sans";
+  border-radius: 10%;
+  color: #6de2ff;
+  box-shadow: inset 1px 2px 15px rgb(233, 233, 217);
+  margin: 2% auto;
+  padding: 1% 2.5%;
+  transition: 1s all;
+}
+.contact-card .mat-card-content .mat-raised-button:hover {
+  color: #999;
+  background-color: #6de2ff;
+  padding: 1.5% 4%;
+  font-size: 1.75vw;
+}
+@media screen and (max-width: 800px) {
+  .contact-card .mat-card-content .mat-raised-button {
+    font-size: 2vw;
+    padding: 1.5% 3%;
+  }
+  .contact-card .mat-card-content .mat-raised-button:hover {
+    padding: 2% 4.5%;
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .contact-card .mat-card-content .mat-raised-button {
+    font-size: 4vw;
+    padding: 2% 3.5%;
+  }
+  .contact-card .mat-card-content .mat-raised-button:hover {
+    padding: 2.5% 5%;
+    font-size: 5.25vw;
+  }
+}/*# sourceMappingURL=contact.component.css.map */

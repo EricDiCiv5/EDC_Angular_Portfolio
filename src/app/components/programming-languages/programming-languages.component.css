@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/*Creación del mapa de puntos de corte*/
+/* Mixin para hacer responsive */
+/*Para usarla en los componentes, llamarlo como
+@include allmedias(nombre de la propiedad de $breakpoints) */
+/* Mixin de transform para que este en todos los navegadores */
+/* Mixin para agrupar todas las propiedades de flexbox */
+/* Mixin para agrupar todas las propiedades de grid */
+/* Mixing Box Sizing */
+/*Variables para familias de fuente de la web*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.progLang-card {
+  max-width: 1200px;
+  height: 105vh;
+  background: rgb(33, 177, 213);
+  margin: 2% auto 4%;
+  border-radius: 20px;
+}
+@media screen and (max-width: 800px) {
+  .progLang-card {
+    margin: 3% auto 8%;
+    height: 190vh;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .progLang-card {
+    height: 105vh;
+  }
+}
+.progLang-card .mat-card-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0%;
+}
+.progLang-card .mat-card-header .h4 {
+  font-family: "Quicksand";
+  font-size: 2.5vw;
+  text-align: center;
+  width: 100%;
+  margin: 10% auto;
+  border-bottom: 2px solid #fbfaeb;
+  z-index: 1;
+  padding-bottom: 3%;
+  color: #fbfaeb;
+}
+@media screen and (max-width: 800px) {
+  .progLang-card .mat-card-header .h4 {
+    font-family: "Quicksand";
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    margin: 10% auto;
+    border-bottom: 2px solid #fbfaeb;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 420px) {
+  .progLang-card .mat-card-header .h4 {
+    font-family: "Quicksand";
+    font-size: 7.5vw;
+    text-align: center;
+    width: 100%;
+    margin: 10% auto;
+    border-bottom: 2px solid #fbfaeb;
+    z-index: 1;
+    line-height: 1.2;
+    padding-bottom: 1%;
+  }
+}
+.progLang-card .mat-card-content {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 16px;
+  width: 50%;
+  margin: auto;
+  font-size: 1.5vw;
+  font-family: "DM Sans";
+  line-height: 1.33;
+  text-align: justify;
+  word-break: keep-all;
+}
+.progLang-card .mat-card-content .mat-grid-list {
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .progLang-card .mat-card-content .mat-grid-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .progLang-card .mat-card-content .mat-grid-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 68vw;
+  }
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile {
+  width: 400px;
+}
+@media screen and (max-width: 800px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile {
+    width: 400px;
+    margin: 25% auto;
+  }
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile:hover .flip-front {
+  transform: perspective(500px) rotateY(-180deg);
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile:hover .flip-back {
+  transform: perspective(500px) rotateY(0deg);
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-front {
+  position: relative;
+  margin: auto;
+  width: 66%;
+  transition: all 0.75s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: perspective(500px) rotateY(0deg);
+}
+@media screen and (max-width: 800px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-front {
+    width: 50%;
+  }
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-front .mat-card-image {
+  max-height: 197.5px;
+  margin: 0 -16px 16px 1.5%;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px rgb(233, 233, 217);
+  background-color: #d1d1d1;
+  margin: auto;
+}
+@media screen and (max-width: 420px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-front .mat-card-image {
+    max-height: 197.5px;
+  }
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back {
+  max-height: 207.5px;
+  padding: 4%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 25.2%;
+  top: 25%;
+  background-color: #5e5e5e;
+  color: #ccfbff;
+  transition: all 0.75s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: perspective(500px) rotateY(180deg);
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back {
+    padding: 8%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back {
+    padding: 10%;
+  }
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back h5 {
+  font-family: "Quicksand";
+  font-size: 1.25vw;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back h5 {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back h5 {
+    font-size: 4.5vw;
+  }
+}
+.progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back article i {
+  font-size: 1.1vw;
+}
+@media screen and (max-width: 800px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back article i {
+    font-size: 2.2vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .progLang-card .mat-card-content .mat-grid-list .mat-grid-tile .flip-back article i {
+    font-size: 3.3vw;
+  }
+}
+
+.mat-grid-tile-content {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 18px;
+}/*# sourceMappingURL=programming-languages.component.css.map */

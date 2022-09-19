@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*Creación del mapa de puntos de corte*/
+/* Mixin para hacer responsive */
+/*Para usarla en los componentes, llamarlo como
+@include allmedias(nombre de la propiedad de $breakpoints) */
+/* Mixin de transform para que este en todos los navegadores */
+/* Mixin para agrupar todas las propiedades de flexbox */
+/* Mixin para agrupar todas las propiedades de grid */
+/* Mixing Box Sizing */
+/*Variables para familias de fuente de la web*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.ytVideos-card {
+  max-width: 1200px;
+  background: rgb(33, 177, 213);
+  height: auto;
+  margin: 2% auto 4%;
+  border-radius: 20px;
+}
+@media screen and (max-width: 800px) {
+  .ytVideos-card {
+    margin: 3% auto 8%;
+    width: 80%;
+  }
+}
+.ytVideos-card .mat-card-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 800px) {
+  .ytVideos-card .mat-card-header {
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .ytVideos-card .mat-card-header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1.5%;
+  }
+}
+.ytVideos-card .mat-card-header .h4 {
+  font-family: "Quicksand";
+  font-size: 2.5vw;
+  text-align: center;
+  width: 100%;
+  margin: 10% auto;
+  border-bottom: 2px solid #fbfaeb;
+  z-index: 1;
+  padding-bottom: 5%;
+  color: #fbfaeb;
+}
+@media screen and (max-width: 800px) {
+  .ytVideos-card .mat-card-header .h4 {
+    font-family: "Quicksand";
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    margin: 10% auto;
+    border-bottom: 2px solid #fbfaeb;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 420px) {
+  .ytVideos-card .mat-card-header .h4 {
+    font-family: "Quicksand";
+    font-size: 7.5vw;
+    text-align: center;
+    width: 100%;
+    margin: 10% auto;
+    border-bottom: 2px solid #fbfaeb;
+    z-index: 1;
+  }
+}
+.ytVideos-card .mat-card-content {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.carousel-container {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 66vw;
+  box-shadow: 0 6px 12px #dce1e1;
+  border-radius: 20px;
+}
+@media screen and (max-width: 420px) {
+  .carousel-container {
+    width: 75vw;
+  }
+}
+
+.carousel-container img {
+  display: none;
+  border-radius: 15px;
+  height: auto;
+  margin: 3% auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgb(233, 233, 217);
+}
+
+.carousel-container img.image-active {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+@media screen and (max-width: 800px) {
+  .carousel-container img.image-active {
+    height: 342.86px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .carousel-container img.image-active {
+    height: 171.43px;
+  }
+}
+
+.carousel-dot-container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.5s ease;
+}
+
+.active, .dot:hover {
+  opacity: 1;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=youtube-videos.component.css.map */
