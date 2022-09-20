@@ -15,5 +15,11 @@
     },
     "flipBack": {
       "text": "SKILL"
+    },
+    "contact": {
+      "firstLabel": "First name",
+      "secondLabel": "Last Name",
+      "thirdLabel": "Message's Subject",
+      "fourthLabel": "Description"
     }
 }
