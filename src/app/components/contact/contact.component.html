@@ -5,19 +5,19 @@
   <mat-card-content>
     <form [formGroup]="contactEDC" (ngSubmit)="sendToMail(contactEDC.value)">
       <mat-form-field appearance="fill">
-        <label>First Name</label>
+        <label>{{ 'contact.firstLabel' | translate }}</label>
         <input matInput formControlName="firstName">
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <label>Last Name</label>
+        <label>{{ 'contact.secondLabel' | translate }}</label>
         <input matInput formControlName="lastName">
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <label>Message's Matter</label>
+        <label>{{ 'contact.thirdLabel' | translate }}</label>
         <input matInput formControlName="msgMatter">
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <label>Description</label>
+        <label>{{ 'contact.fourthLabel' | translate }}</label>
         <textarea matInput formControlName="descrip"></textarea>
       </mat-form-field>
       <button type="submit" mat-raised-button [disabled]="!contactEDC.valid">Send to my mail</button>

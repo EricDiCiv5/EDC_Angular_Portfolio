@@ -15,5 +15,11 @@
     },
     "flipBack": {
       "text": "HABILIDAD"
+    },
+    "contact": {
+      "firstLabel": "Nombre",
+      "secondLabel": "Apellido",
+      "thirdLabel": "Asunto del mensaje",
+      "fourthLabel": "Descripción"
     }
 }
