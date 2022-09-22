@@ -4,22 +4,27 @@
   </mat-card-header>
   <mat-card-content>
     <form [formGroup]="contactEDC" (ngSubmit)="sendToMail(contactEDC.value)">
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="standard">
         <label>{{ 'contact.firstLabel' | translate }}</label>
-        <input matInput formControlName="firstName">
+        <input type="text" matInput formControlName="firstName">
       </mat-form-field>
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="standard">
         <label>{{ 'contact.secondLabel' | translate }}</label>
-        <input matInput formControlName="lastName">
+        <input type="text" matInput formControlName="lastName">
       </mat-form-field>
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="standard">
         <label>{{ 'contact.thirdLabel' | translate }}</label>
-        <input matInput formControlName="msgMatter">
+        <input type="email" matInput formControlName="email">
       </mat-form-field>
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="standard">
         <label>{{ 'contact.fourthLabel' | translate }}</label>
+        <input type="text" matInput formControlName="msgSubject">
+      </mat-form-field>
+      <mat-form-field appearance="standard">
+        <label>{{ 'contact.fifthLabel' | translate }}</label>
         <textarea matInput formControlName="descrip"></textarea>
       </mat-form-field>
+      <re-captcha class="re-captcha" formControlName="recaptcha" (resolved)="captchaClicked($event)" siteKey="6Lf2lRciAAAAAC6tIMOl7kPrHfv7yUdAGs0VCz_K"></re-captcha>
       <button type="submit" mat-raised-button [disabled]="!contactEDC.valid">Send to my mail</button>
     </form>
   </mat-card-content>

@@ -19,7 +19,8 @@
     "contact": {
       "firstLabel": "First name",
       "secondLabel": "Last Name",
-      "thirdLabel": "Message's Subject",
-      "fourthLabel": "Description"
+      "thirdLabel": "Your email",
+      "fourthLabel": "Message's Subject",
+      "fifthLabel": "Description"
     }
 }

@@ -19,7 +19,8 @@
     "contact": {
       "firstLabel": "Nombre",
       "secondLabel": "Apellido",
-      "thirdLabel": "Asunto del mensaje",
-      "fourthLabel": "Descripción"
+      "thirdLabel": "Tu email",
+      "fourthLabel": "Asunto del mensaje",
+      "fifthLabel": "Descripción"
     }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from 'src/app/services/contact.service';
 import { Observable } from 'rxjs';
 
@@ -11,16 +11,20 @@ import { Observable } from 'rxjs';
 })
 export class ContactComponent implements OnInit {
   public contactEDC!: FormGroup;
+  public captcha:string;
 
-  constructor(private formBuild: FormBuilder, private contact: ContactService) {
+  constructor(private contact: ContactService) {
+    this.captcha = '';
   }
 
   ngOnInit(): void {
-    this.contactEDC = this.formBuild.group({
+    this.contactEDC = new FormGroup({
       firstName: new FormControl('', [Validators.required]),
       lastName: new FormControl('', [Validators.required]),
-      msgMatter: new FormControl('', [Validators.required]),
-      descrip: new FormControl('', [Validators.maxLength(500)])
+      email: new FormControl('', [Validators.required]),
+      msgSubject: new FormControl('', [Validators.required]),
+      descrip: new FormControl('', [Validators.maxLength(1000)]),
+      recaptcha: new FormControl('', [Validators.required])
     })
   }
 
@@ -37,6 +41,11 @@ export class ContactComponent implements OnInit {
       }
     )
 
+  }
+
+  captchaClicked(captchaResponse: string) {
+    this.captcha = captchaResponse;
+    console.log('resolved captcha with response: ' + this.captcha);
   }
 
 }

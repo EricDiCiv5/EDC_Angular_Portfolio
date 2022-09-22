@@ -7,10 +7,13 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { NgImageSliderModule } from 'ng-image-slider';
+import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha";
 
 @NgModule({
   declarations: [],
   imports: [
+    RecaptchaModule,
+    RecaptchaFormsModule,
     CommonModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -20,13 +23,17 @@ import { NgImageSliderModule } from 'ng-image-slider';
             deps: [HttpClient]
         }
     }),
-    NgImageSliderModule
+    NgImageSliderModule,
+    RecaptchaModule
   ],
   exports: [
+    
     CommonModule,
     HttpClientModule,
     TranslateModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    RecaptchaModule,
+    RecaptchaFormsModule
   ]
 })
 export class NpmLibrariesModule { }
