@@ -16,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NpmLibrariesModule } from './modules/npm-libraries/npm-libraries.module';
 import { MaterialAngularModule } from './modules/material-angular/material-angular.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { OtherLanguagesAndTechnologiesComponent } from './components/other-languages-and-technologies/other-languages-and-technologies.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     WebProjectsComponent,
     YoutubeVideosComponent,
     ContactComponent,
-    CarouselComponent
+    CarouselComponent,
+    OtherLanguagesAndTechnologiesComponent
   ],
   imports: [
     BrowserModule,

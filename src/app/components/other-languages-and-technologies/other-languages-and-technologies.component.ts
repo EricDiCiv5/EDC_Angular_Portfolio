@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-prog-langs',
-  templateUrl: './programming-languages.component.html',
-  styleUrls: ['./programming-languages.component.scss']
+  selector: 'other-langs-and-techs',
+  templateUrl: './other-languages-and-technologies.component.html',
+  styleUrls: ['./other-languages-and-technologies.component.scss']
 })
-export class ProgrammingLanguagesComponent implements OnInit {
-  public colSize=4;
+export class OtherLanguagesAndTechnologiesComponent implements OnInit {
+
+  public colSize=3;
   public isMobile:boolean = false;
 
   constructor(private breakpointObs: BreakpointObserver ) {}
@@ -24,7 +25,7 @@ export class ProgrammingLanguagesComponent implements OnInit {
       this.colSize = 1;
     }
     else {
-      this.colSize = 4;
+      this.colSize = 3;
     }
   }
 

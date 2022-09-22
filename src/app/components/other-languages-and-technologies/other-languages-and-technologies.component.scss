@@ -1,18 +1,18 @@
 @import '../../styles/global.scss';
 
-.progLang-card {
+.langsAndTechs-card {
   max-width: 1200px;
-  height: 105vh;
+  height: 135vh;
   background: $cardColor;
   margin: 2% auto 4%;
   border-radius: 20px;
   @include allmedias(androidLargeHorit){
     margin: 3% auto 8%;
-    height: 190vh;
+    height: 150vh;
     width: 80%;
   }
   @include allmedias(androidLargeVert){
-    height: 105vh;
+    height: 88vh;
   }
   .mat-card-header{
     @include flex(flex, row, wrap, center, center, center);
@@ -160,5 +160,3 @@
 .mat-card-header .mat-card-title {
     margin-bottom: 18px;
 }
-
-
