@@ -5,7 +5,8 @@
         "button3": "WEB PROJECTS",
         "button4": "YOUTUBE VIDEOS",
         "button5": "CONTACT",
-        "button6": "OTHER LANGUAGES & TECHNOLOGIES"
+        "button6": "OTHER LANGUAGES & TECHNOLOGIES",
+        "button7": "DOWNLOAD MY CV"
     },
     "aboutMe": {
       "bio1" : "Greetings! My name is Eric Díaz and I'm actually a 28-year-old spanish guy.",
@@ -23,5 +24,13 @@
       "thirdLabel": "Your email",
       "fourthLabel": "Message's Subject",
       "fifthLabel": "Description"
+    },
+    "tokenForm": {
+      "label": "The Secret Code",
+      "step1": "Ask me through the contact form",
+      "step2": "I'll check if your e-mail exists or also if I know you",
+      "step3": "If so, I'll send you a code on the message's answer",
+      "step4": "Introduce the code on the below's input",
+      "step5": "Click on PDF Logo to download my CV"
     }
 }
