@@ -49,6 +49,7 @@
         margin-left: 1.5%;
         font-size: 1.3vw;
         z-index: 6;
+        color: $cardTitle;
         @include allmedias(androidLargeHorit){
           margin-left: 2.5%;
           font-size: 2.2vw;

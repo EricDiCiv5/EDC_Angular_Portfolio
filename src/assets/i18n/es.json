@@ -5,7 +5,8 @@
         "button3": "PROYECTOS WEB",
         "button4": "VÍDEOS DE YOUTUBE",
         "button5": "CONTACTO",
-        "button6": "OTROS LENGUAJES Y TECNOLOGÍAS"
+        "button6": "OTROS LENGUAJES Y TECNOLOGÍAS",
+        "button7": "DESCARGAR MI CV"
     },
     "aboutMe": {
       "bio1" : "Saludos! Me llamo Eric Díaz, soy un chico español de 28 años actualmente.",
@@ -23,5 +24,13 @@
       "thirdLabel": "Tu email",
       "fourthLabel": "Asunto del mensaje",
       "fifthLabel": "Descripción"
+    },
+    "tokenForm": {
+      "label": "El còdigo secreto",
+      "step1": "Pídemelo a través del formulario de contacto",
+      "step2": "Comrpobaré si tu e-mail existe o también si te conozco",
+      "step3": "De ser así, Te enviaré un còdigo en la respuesta del mensaje",
+      "step4": "Introduce el código en el input de abajo",
+      "step5": "Clica en el icono de PDF para descargar mi CV"
     }
 }

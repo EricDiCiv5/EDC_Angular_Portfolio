@@ -21,14 +21,14 @@ export class WebProjectsComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.breakpointObs.observe(['(max-width: 800px)', '(max-width: 360px)']).subscribe(() => this.threeBreakpoints());
+    this.breakpointObs.observe(['(max-width: 800px)', '(max-width: 420px)']).subscribe(() => this.threeBreakpoints());
   }
 
   threeBreakpoints(){
     if(this.breakpointObs.isMatched('(max-width: 800px)')){
       this.wide = 700;
     }
-    else if(this.breakpointObs.isMatched('(max-width: 360px)')){
+    else if(this.breakpointObs.isMatched('(max-width: 420px)')){
       this.wide = 300;
     }
     else {
@@ -42,7 +42,7 @@ export class WebProjectsComponent implements OnInit {
         window.open('http://edc-portfolio.web.app/', '_blank');
         break;
       case 1:
-        window.open('http://calc-desgravacion-app-ericdiaz.herokuapp.com/', '_blank');
+        window.open('https://edc-calc-reduct.herokuapp.com/', '_blank');
         break;
       case 2:
         window.open('http://layout-goldenstatewarriors-edc.herokuapp.com/', '_blank');
