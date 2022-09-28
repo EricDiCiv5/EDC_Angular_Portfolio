@@ -66,6 +66,7 @@
     }
     p{
       margin: 4% auto;
+      color: $cardTitle;
       @include allmedias(androidLargeHorit){
         margin: 6% auto;
       }
