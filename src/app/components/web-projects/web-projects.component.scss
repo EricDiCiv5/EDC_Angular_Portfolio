@@ -12,10 +12,10 @@
   }
   .mat-card-header{
     @include flex(flex, row, wrap, center, center, center);
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     .h4{
       @include sectionTitles($primaryFont, 2.5vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);
-      padding-bottom: 1%;
+      padding-bottom: 5%;
       color: $cardTitle;
       @include allmedias(androidLargeHorit){
         @include sectionTitles($primaryFont, 4vw, center, 100%, 10% auto, 2px solid $cardTitle, 1);

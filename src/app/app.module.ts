@@ -17,6 +17,7 @@ import { NpmLibrariesModule } from './modules/npm-libraries/npm-libraries.module
 import { MaterialAngularModule } from './modules/material-angular/material-angular.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { OtherLanguagesAndTechnologiesComponent } from './components/other-languages-and-technologies/other-languages-and-technologies.component';
+import { DownloadCVComponent } from './components/download-cv/download-cv.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { OtherLanguagesAndTechnologiesComponent } from './components/other-langu
     YoutubeVideosComponent,
     ContactComponent,
     CarouselComponent,
-    OtherLanguagesAndTechnologiesComponent
+    OtherLanguagesAndTechnologiesComponent,
+    DownloadCVComponent
   ],
   imports: [
     BrowserModule,
