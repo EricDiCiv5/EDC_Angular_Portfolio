@@ -23,7 +23,8 @@
       "secondLabel": "Apellido",
       "thirdLabel": "Tu email",
       "fourthLabel": "Asunto del mensaje",
-      "fifthLabel": "Descripción"
+      "fifthLabel": "Descripción",
+      "secretToken": "Introduce the secret code"
     },
     "tokenForm": {
       "label": "El còdigo secreto",
