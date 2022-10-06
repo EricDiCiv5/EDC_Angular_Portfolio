@@ -10,14 +10,14 @@ import { FullPageComponent } from './components/full-page/full-page.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ProgrammingLanguagesComponent } from './components/programming-languages/programming-languages.component';
 import { WebProjectsComponent } from './components/web-projects/web-projects.component';
-import { YoutubeVideosComponent } from './components/youtube-videos/youtube-videos.component';
+
 import { ContactComponent } from './components/contact/contact.component';
 
 import { NpmLibrariesModule } from './modules/npm-libraries/npm-libraries.module';
 import { MaterialAngularModule } from './modules/material-angular/material-angular.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { OtherLanguagesAndTechnologiesComponent } from './components/other-languages-and-technologies/other-languages-and-technologies.component';
-import { DownloadCVComponent } from './components/download-cv/download-cv.component';
+
 
 
 @NgModule({
@@ -29,11 +29,9 @@ import { DownloadCVComponent } from './components/download-cv/download-cv.compon
     AboutMeComponent,
     ProgrammingLanguagesComponent,
     WebProjectsComponent,
-    YoutubeVideosComponent,
     ContactComponent,
     CarouselComponent,
-    OtherLanguagesAndTechnologiesComponent,
-    DownloadCVComponent
+    OtherLanguagesAndTechnologiesComponent
   ],
   imports: [
     BrowserModule,
