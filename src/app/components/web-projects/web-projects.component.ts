@@ -81,8 +81,8 @@ export class WebProjectsComponent implements OnInit {
       }, {
         image: '../../../assets/images/figma_designs/EDC_SWAPI_Films.jpg',
         thumbImage: '../../../assets/images/figma_designs/EDC_SWAPI_Films.jpg',
-        alt: 'Fake online store',
-        title: 'Fake online store'
+        alt: 'Star Wars SWAPI (films info)',
+        title: 'Star Wars SWAPI (films info)'
       }
   ];
 
