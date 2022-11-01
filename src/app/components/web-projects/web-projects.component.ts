@@ -47,6 +47,12 @@ export class WebProjectsComponent implements OnInit {
       case 2:
         window.open('http://layout-goldenstatewarriors-edc.herokuapp.com/', '_blank');
         break;
+      case 3:
+        window.open('https://edc-fakestore.herokuapp.com/', '_blank');
+        break;
+      case 4:
+        window.open('https://edc-swapi-films.netlify.app/', '_blank');
+        break;
       default: console.log("Web Project Not found");
     }
   }
