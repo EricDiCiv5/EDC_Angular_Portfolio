@@ -67,6 +67,16 @@ export class WebProjectsComponent implements OnInit {
         thumbImage: '../../../assets/images/figma_designs/GSW_Roster_Design.jpg',
         alt: 'Golden State Warriors Roster',
         title: 'Golden State Warriors Roster'
+      }, {
+        image: '../../../assets/images/figma_designs/Fakestore_Design.jpg',
+        thumbImage: '../../../assets/images/figma_designs/Fakestore_Design.jpg',
+        alt: 'Fake online store',
+        title: 'Fake online store'
+      }, {
+        image: '../../../assets/images/figma_designs/EDC_SWAPI_Films.jpg',
+        thumbImage: '../../../assets/images/figma_designs/EDC_SWAPI_Films.jpg',
+        alt: 'Fake online store',
+        title: 'Fake online store'
       }
   ];
 
